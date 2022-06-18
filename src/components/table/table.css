@@ -1,0 +1,46 @@
+.img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+h3 {
+    align-self:center ;
+   margin-left: 20px;
+}
+.phone{
+    margin-right: 35px;
+}
+.span {
+    height: 8px;
+    width: 8px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  
+}
+.table-conainer{
+  margin-left: 10px;
+  height: 90vh;
+}
+main {
+margin: 50px;
+padding: 10px 35px 10px 35px;
+background-color: #f0f3f7;
+height: 110vh;
+}
+h2{
+    text-align: left;
+    
+}
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+h5{
+    margin-left: 10px;
+}
+/* span {
+    color: gray;
+} */
