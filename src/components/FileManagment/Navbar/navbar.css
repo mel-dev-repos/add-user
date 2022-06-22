@@ -1,0 +1,21 @@
+.icon-txt {
+    margin-top: 15px;
+    color: rgb(117, 109, 109);
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+.icon-txt:hover {
+    border: 1px solid "rgb(237, 235, 255)" !important ;
+    background-color: rgb(237, 235, 255) !important;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+}
+.icon-nav {
+  margin-right: 15px;
+
+}

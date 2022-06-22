@@ -1,0 +1,44 @@
+
+
+.search-icon {
+   position: absolute;
+   align-self: center; 
+   margin-left: 37px;
+   
+}
+.search {
+    display: flex;
+    padding: 15px;
+}
+.input-search:focus {
+    outline-color: rgb(237, 235, 255);
+ border: 1px solid rgb(237, 235, 255);
+}
+.bellIcon {
+ width: 35%;
+ height: 5rem;
+
+}
+.icon-menu {
+margin-right: 12px;
+width: 22px;
+height: 2rem;
+font-weight: 100;
+}
+.css-f3jnds-MuiDataGrid-columnHeaders {
+    border: none !important;
+}
+.MuiDataGrid-row {
+    border: none !important;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list {
+    padding: 12px !important;
+}
+.purple {
+    background-color: rgb(194, 172, 255);
+    color:black
+}
+.badge span{
+    transform: translate(-55px,29px);
+background-color: rgb(113, 52, 255);
+}

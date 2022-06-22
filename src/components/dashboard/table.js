@@ -62,49 +62,39 @@ export default function BasicTable() {
           {user?.length > 0
             ? user?.map((item) => {
                 return (
-                  <>
-                    <TableRow
-                      sx={{
-                        "&:last-child td, &:last-child th": { border: 0 },
-                      }}
-                    >
-                      <TableCell
-                        component="th"
-                        scope="row"
-                        key={item?.id}
-                        width="33%"
-                      >
-                        <div style={{ display: "flex" }}>
-                          <Checkbox />
-                          <img src={item?.image} />
-                          <h5>
-                            {item?.name} {item?.lastName} <br />
-                            <span> {item?.email}</span>
-                          </h5>
-                        </div>
-                      </TableCell>
-                      <TableCell> logged in</TableCell>
-                      <TableCell>{item?.stats}</TableCell>
+                  <TableRow
+                    key={item?.id}
+                    sx={{
+                      "&:last-child td, &:last-child th": { border: 0 },
+                    }}
+                  >
+                    <TableCell component="th" scope="row" width="33%">
+                      <div style={{ display: "flex" }}>
+                        <Checkbox />
+                        <img src={item?.image} />
+                        <h5>
+                          {item?.name} {item?.lastName} <br />
+                          <span> {item?.email}</span>
+                        </h5>
+                      </div>
+                    </TableCell>
+                    <TableCell> logged in</TableCell>
+                    <TableCell>{item?.stats}</TableCell>
 
-                      <TableCell>
-                        <StyledTableCell>
-                          <Modifyroles
-                            ID={item?.id}
-                            handleChange={handleChange}
-                          />
+                    <TableCell>
+                      <StyledTableCell>
+                        <Modifyroles
+                          ID={item?.id}
+                          handleChange={handleChange}
+                        />
 
-                          <StyledDiv2>
-                            <Remove
-                              ID={item?.id}
-                              setUser={setUser}
-                              user={user}
-                            />
-                            Remove User
-                          </StyledDiv2>
-                        </StyledTableCell>
-                      </TableCell>
-                    </TableRow>
-                  </>
+                        <StyledDiv2>
+                          <Remove ID={item?.id} setUser={setUser} user={user} />
+                          Remove User
+                        </StyledDiv2>
+                      </StyledTableCell>
+                    </TableCell>
+                  </TableRow>
                 );
               })
             : null}
